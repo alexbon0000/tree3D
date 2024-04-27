@@ -5,8 +5,8 @@ import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader.js";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 
 function ThreeScene() {
-    const mtl = useLoader(MTLLoader, "src/tree/tree.mtl");
-    const obj = useLoader(OBJLoader, "src/tree/tree.obj", (loader) => {
+    const mtl = useLoader(MTLLoader, "/tree.mtl");
+    const obj = useLoader(OBJLoader, "/tree.obj", (loader) => {
         // Указываем ссылку на объект для загрузки материалов
         loader.setMaterials(mtl);
     });
